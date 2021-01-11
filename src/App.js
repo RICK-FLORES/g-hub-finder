@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
 import Alert from './components/layout/Alert'
@@ -19,16 +19,16 @@ const App = () => {
   const [loading, setLoading] = useState(false)
   const [alert, setAlert] = useState(null)
   
-  // TO-DO: Refactor GET ALL USERS
-
   // // GET ALL USERS
-  // async componentDidMount() {
-  //   this.setState({ loading: true })
-
-  //   const res = await axios.get(`https://api.github.com/users?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`)
-
-  //   this.setState({ users: res.data, loading: false })
-  // }
+  useEffect(() => {
+    const getAllUsers = async () => {
+      setLoading(true)
+      const res = await axios.get(`https://api.github.com/users?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`)
+      setUsers(res.data)
+      setLoading(false)
+    }
+    getAllUsers()
+  }, [])
 
   // SEARCH FOR USERS
   const searchUsers = async text => {

@@ -4,7 +4,6 @@ import Spinner from '../layout/Spinner'
 import Repos from '../repos/Repos'
 import PropTypes from 'prop-types'
 
-
 const User = ({ user, loading, getUser, getUserRepos, repos, match }) => {
   useEffect(() => {
     getUser(match.params.login)
