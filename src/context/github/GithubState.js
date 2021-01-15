@@ -31,8 +31,6 @@ const GithubState = props => {
 
   const [state, dispatch] = useReducer(GithubReducer, initialState)
 
-  //TO-DO'S
-
   // SEARCH USERS
   const searchUsers = async text => {
     setLoading()
