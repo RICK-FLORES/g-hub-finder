@@ -1,0 +1,33 @@
+.card {
+  padding: 2em;
+  width: 80%;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 5px 10px rgb(72, 72, 72);
+}
+
+.img {
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.userName {
+  margin-bottom: 1em;
+}
+
+.btn {
+  padding: .6em;
+  background-color: rgb(174, 35, 35);
+  border-radius: 5%;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  box-shadow: 2px 3px 5px rgb(72, 72, 72);
+}
+
+.btn:hover, .btn:active {
+  background-color: rgb(181, 121, 121);
+
+}

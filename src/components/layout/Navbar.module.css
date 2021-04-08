@@ -1,5 +1,18 @@
 .navbar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 3em;
+  padding: 1em 2em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  background-color: rgb(109, 109, 118);
+}
+
+.linkList {
+  display: flex;
+  list-style: none;
+}
+
+.linkItem:first-child {
+  padding: 0 1em 0 0;
 }

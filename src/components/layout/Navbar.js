@@ -11,9 +11,9 @@ const Navbar = ({ icon, title }) => {
         <h1>
         <i className={icon}></i> {title}
         </h1>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
+        <ul className={styles.linkList}>
+          <li className={styles.linkItem}><Link to="/">Home</Link></li>
+          <li className={styles.linkItem}><Link to="/about">About</Link></li>
         </ul>
       </nav>
     )

@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  gap: 1em;
+  justify-items: center;
+}
+
+@media (min-width: 760px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
