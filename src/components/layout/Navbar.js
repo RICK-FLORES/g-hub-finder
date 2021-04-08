@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
+import styles from './Navbar.module.css'
 
 
 const Navbar = ({ icon, title }) => {
 
     return (
-      <nav className='navbar bg-primary'>
+      <nav className={styles.navbar}>
         <h1>
         <i className={icon}></i> {title}
         </h1>
