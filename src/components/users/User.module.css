@@ -1,0 +1,98 @@
+.userCard {
+  margin: 0 2em 2em;
+  padding:1.5em;
+  border-radius: 1rem;
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+  backdrop-filter: blur(.5rem);
+  box-shadow: 4px 5px 10px rgb(72, 72, 72);
+}
+
+.userCard h1 {
+  margin-bottom: .2em;
+}
+
+.userCard h3 {
+  margin-bottom: .5em;
+}
+
+.goBackBtn {
+  padding: 1em;
+  color: black;
+  background-color:rgb(201, 201, 201);
+  box-shadow: 2px 3px 5px rgb(72, 72, 72);
+  border-radius: .5em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  border-radius: 50%;
+  margin: 1.5em 0;
+}
+
+.userInfo {
+  list-style: none;
+  margin: 1.5em 0;
+}
+
+.miscInfo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  margin: 0 auto 1em auto;
+  padding: 2em;
+}
+
+.miscInfo p {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.repoHeader {
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto 1em auto;
+  padding: 0 1.33332em;
+}
+
+.bio {
+  margin-bottom: 1.5em;
+}
+
+.viewGitHubBtn {
+  padding: .5em;
+  border-radius: .5em;
+  background-color: #166e49;
+  box-shadow: 2px 3px 5px rgb(72, 72, 72);
+
+}
+
+.goBackBtnContainer {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.miscInfoItems {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.miscInfoItems p {
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: .5em;
+}
+
+.miscInfoItems span {
+  width: 95%;
+  padding: .5em;
+  color: white;
+  background-color: rgb(39, 39, 39);
+}
+

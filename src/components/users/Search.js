@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react'
 import GithubContext from '../../context/github/githubContext'
 import AlertContext from '../../context/alert/alertContext'
 import styles from './Search.module.css'
+import './Search.css'
 
 
 const Search = () => {
@@ -49,7 +50,7 @@ const Search = () => {
             <button 
               className={styles.clearBtn} 
               onClick={githubContext.clearUsers}>
-                Clear
+                <i className="fas fa-ban"></i>
               </button>
           }
       </form>

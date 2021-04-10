@@ -14,7 +14,7 @@ const Users = () => {
       return (
         <div className={styles.container}>
           {users.map(user => {
-            return <UserItem key={user.id} user={user} /> 
+            return <ul className={styles.usersList}><li className={styles.usersItem}><UserItem key={user.id} user={user} /></li></ul> 
           })}
         </div>
       )

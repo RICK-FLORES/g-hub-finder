@@ -1,12 +1,31 @@
 .container {
+  width: 100%;
   display: grid;
-  gap: 1em;
+  gap: 1.3em;
   justify-items: center;
+  margin: 0 auto 3em auto;
+  padding: 0 2em;
+}
+
+.usersList {
+  width: 100%;
+  list-style: none;
+}
+
+.usersList:last-child {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 540px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 760px) {
   .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }

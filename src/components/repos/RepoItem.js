@@ -1,14 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styles from './RepoItem.module.css'
 
 
 const RepoItem = ({ repo }) => {
   return (
-    <div className='card'>
-      <h3>
-        <a href={repo.html_url}>{repo.name}</a>
-      </h3>
-    </div>
+    <>
+        <ul className={styles.repoList}>
+          <li className={styles.repoListItem} key={repo.id}>
+            <h3 className={styles.repoLinkContainer}>
+              <a href={repo.html_url} target='_blank' rel="noreferrer">{repo.name}</a>
+            </h3>
+          </li>
+        </ul>
+    </>
   )
 }
 

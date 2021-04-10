@@ -1,11 +1,24 @@
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .navbar {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1em 2em;
+  align-items: center;
+  padding: 2em 2em;
   margin: 0 auto;
   margin-bottom: 1em;
-  background-color: rgb(109, 109, 118);
+  background-color: #0f3443;
+}
+
+.logo {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .linkList {
@@ -15,4 +28,10 @@
 
 .linkItem:first-child {
   padding: 0 1em 0 0;
+}
+
+@media (min-width: 360px) {
+  .logo {
+    font-size: 1.4rem;
+  }
 }

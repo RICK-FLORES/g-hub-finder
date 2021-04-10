@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import Spinner from '../layout/Spinner'
 import Repos from '../repos/Repos'
 import GithubContext from '../../context/github/githubContext'
+import styles from './User.module.css'
+import './User.css'
 
 const User = ({ match }) => {
   const githubContext = useContext(GithubContext)
@@ -35,51 +37,62 @@ const User = ({ match }) => {
 
   return (
     <>
-      <Link to='/' className='btn btn-light'>Go Back</Link>
-      <div className="card grid-2">
-        <div className="all-center">
+      <div className='bgImage'></div>
+      <div className={styles.goBackBtnContainer}>
+        <Link to='/' className={styles.goBackBtn}>Go Back</Link>
+      </div>
+      <div className={styles.userCard}>
+        <div className={styles.container}>
           <img 
             src={avatar_url} 
-            className='round-img' 
+            className={styles.img} 
             alt="" 
             style={{ width: '150px' }} 
           />
-          <h1>{name}</h1>
-          <p>Location: {location}</p>
+          <h1 className={styles.userName}>{name}</h1>
+          <p className={styles.location}>Location: {location}</p>
         </div>
-        <div>
+        <div className={styles.bioContainer}>
           {bio && <>
-            <h3>Bio</h3>
-            <p>{bio}</p>
+            <h3 className={styles.bioHeader}>Bio</h3>
+            <p className={styles.bio}>{bio}</p>
           </>}
-          <a href={html_url} className='btn btn-dark my-1'>View Github</a>
-          <ul>
-            <li>
+          <a href={html_url} className={styles.viewGitHubBtn} target='_blank' rel="noreferrer">View Github</a>
+          <ul className={styles.userInfo}>
+            <li className={styles.userName}>
               {login && <>
-                <strong>Username: </strong> {login}
+                <strong>Username </strong> {login}
               </>}
             </li>
-            <li>
+            <li className={styles.company}>
               {login && <>
-                <strong>Company: </strong> {company}
+                <strong>Company </strong> {company}
               </>}
             </li>
-            <li>
+            <li className={styles.website}>
               {login && <>
-                <strong>Website: </strong> {blog}
+                <strong>Website </strong> {blog}
               </>}
             </li>
           </ul>
         </div>
       </div>
-      <div className="card text-center">
-        <div className="badge badge-primary">Followers: {followers}</div>
-        <div className="badge badge-success">Following: {following}</div>
-        <div className="badge badge-light">Repos: {public_repos}</div>
-        <div className="badge badge-dark">Gists: {public_gists}</div>
+      <div className={styles.miscInfo}>
+        <div className={styles.miscInfoItems}>
+          <p className={styles.followers}>Followers </p><span className={styles.count}>{followers}</span>
+        </div>
+        <div className={styles.miscInfoItems}>
+          <p className={styles.following}>Following </p><span className={styles.count}>{following}</span>
+        </div>
+        <div className={styles.miscInfoItems}>
+          <p className={styles.repos}>Repos </p><span className={styles.count}>{public_repos}</span>
+        </div>
+        <div className={styles.miscInfoItems}>
+          <p className={styles.gists}>Gists</p><span className={styles.count}>{public_gists}</span>
+        </div>
       </div>
-      <h2 style={{textAlign: 'center'}}>Most Recent Repositories</h2>
-      <Repos repos={repos} />
+      <h2 className={styles.repoHeader}>Most Recent Repositories</h2>
+      <Repos repos={repos} className={styles.repos} />
     </>
   )
 }

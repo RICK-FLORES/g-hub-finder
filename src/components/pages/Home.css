@@ -1,0 +1,9 @@
+.bgImage {
+  position: fixed;
+  width: 100%;
+  height: 50vh;
+  background-image: url(./github-alt-svgrepo-com-0f3443.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
