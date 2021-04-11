@@ -61,17 +61,17 @@ const User = ({ match }) => {
           <ul className={styles.userInfo}>
             <li className={styles.userName}>
               {login && <>
-                <strong>Username </strong> {login}
+                <strong>Username: </strong> {login}
               </>}
             </li>
             <li className={styles.company}>
               {login && <>
-                <strong>Company </strong> {company}
+                <strong>Company: </strong> {company}
               </>}
             </li>
             <li className={styles.website}>
               {login && <>
-                <strong>Website </strong> {blog}
+                <strong>Website: </strong> {blog}
               </>}
             </li>
           </ul>

@@ -8,14 +8,16 @@
 }
 
 .userCard h1 {
-  margin-bottom: .2em;
+  color:#0f3443;
 }
 
 .userCard h3 {
+  color:#0f3443;
   margin-bottom: .5em;
 }
 
 .goBackBtn {
+  margin-left: 1em;
   padding: 1em;
   color: black;
   background-color:rgb(201, 201, 201);
@@ -35,13 +37,14 @@
 }
 
 .userInfo {
+  color:#0f3443;
   list-style: none;
   margin: 1.5em 0;
 }
 
 .miscInfo {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1em;
   margin: 0 auto 1em auto;
   padding: 2em;
@@ -60,15 +63,15 @@
 }
 
 .bio {
+  color:#0f3443;
   margin-bottom: 1.5em;
 }
 
 .viewGitHubBtn {
   padding: .5em;
   border-radius: .5em;
-  background-color: #166e49;
+  background-color: #1ea16b;
   box-shadow: 2px 3px 5px rgb(72, 72, 72);
-
 }
 
 .goBackBtnContainer {
@@ -94,5 +97,9 @@
   padding: .5em;
   color: white;
   background-color: rgb(39, 39, 39);
+}
+
+.location {
+  color:#0f3443;
 }
 

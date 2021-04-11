@@ -1,9 +1,53 @@
-.bgImage {
-  position: fixed;
+.container {
+  z-index: -1;
   width: 100%;
-  height: 50vh;
+  height: 100%;
+  margin: 0 auto;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+.bgImage {
+  z-index: -1;
+  position: fixed;
+  top: 30%;
+  width: 320px;
+  height: 320px;
   background-image: url(./github-alt-svgrepo-com-0f3443.svg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center center center;
   background-size: cover;
 }
+
+@media (min-width: 360px) {
+  .bgImage {
+    width: 360px;
+    height: 360px;
+  
+  }
+}
+
+@media (min-width: 411px) {
+  .bgImage {
+    width: 415px;
+    height: 415px;  
+  }
+}
+
+@media (min-width: 540px) {
+  .bgImage {
+    top: 20%;
+    width: 550px;
+    height: 550px;  
+  }
+}
+
+@media (min-width: 760px) {
+  .bgImage {
+    width: 615px;
+    height: 615px;  
+
+  }
+}
+
