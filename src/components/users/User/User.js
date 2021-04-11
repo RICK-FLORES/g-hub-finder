@@ -1,8 +1,8 @@
 import React, { useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
-import Spinner from '../layout/Spinner'
-import Repos from '../repos/Repos'
-import GithubContext from '../../context/github/githubContext'
+import Spinner from '../../layout/Spinner/Spinner'
+import Repos from '../../repos/Repos/Repos'
+import GithubContext from '../../../context/github/githubContext'
 import styles from './User.module.css'
 import './User.css'
 
