@@ -1,6 +1,9 @@
 .userCard {
-  margin: 0 2em 2em;
-  padding:1.5em;
+  align-self: center;
+  width: 90%;
+  max-width: 720px;
+  margin: 0 2em;
+  padding: 2em;
   border-radius: 1rem;
   background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
   backdrop-filter: blur(.5rem);
@@ -17,7 +20,6 @@
 }
 
 .goBackBtn {
-  margin-left: 1em;
   padding: 1em;
   color: black;
   background-color:rgb(201, 201, 201);
@@ -29,6 +31,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 720px;
 }
 
 .img {
@@ -43,6 +46,7 @@
 }
 
 .miscInfo {
+  max-width: 720px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
@@ -75,7 +79,11 @@
 }
 
 .goBackBtnContainer {
-  padding: 1em;
+  align-self: center;
+  width: 90%;
+  max-width: 720px;
+  margin: 0 2em;
+  padding: 2em 0;
   margin-bottom: 1em;
 }
 
@@ -97,9 +105,15 @@
   padding: .5em;
   color: white;
   background-color: rgb(39, 39, 39);
+  border-radius: .5em;
 }
 
 .location {
   color:#0f3443;
 }
 
+@media (min-width: 540px) {
+  .miscInfo {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

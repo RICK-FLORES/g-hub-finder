@@ -1,9 +1,20 @@
+.bgImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
 .bgImage {
   z-index: -1;
   position: fixed;
   width: 360px;
   height: 360px;
-  background-image: url(../../../images/github-alt-svgrepo-com-34e89e.svg);
+  background-image: url(../../../images/octocat.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

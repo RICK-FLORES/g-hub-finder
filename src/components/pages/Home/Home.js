@@ -7,10 +7,10 @@ import './Home.css'
 const Home = () => (
       <>
         <Search />
-        <div className='container'>
+        <Users />
+        <div className='bgImageContainer'>
             <div className='bgImage'></div>
         </div>
-        <Users />
       </>
   )
 

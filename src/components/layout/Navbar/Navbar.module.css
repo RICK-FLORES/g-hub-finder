@@ -15,9 +15,18 @@ a {
   background-color: #0f3443;
 }
 
+.container {
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .logo {
   color: white;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 
@@ -26,12 +35,45 @@ a {
   list-style: none;
 }
 
+.linkList span {
+  display: none;
+}
+
+
 .linkItem:first-child {
   padding: 0 1em 0 0;
 }
 
 @media (min-width: 360px) {
   .logo {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 540px) {
+  .linkList i {
+    display: none;
+  }
+
+  .linkList span {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 760px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  .linkList i {
+    display: none;
+  }
+
+  .linkList span {
+    display: inline-block;
+  }
+  
+  .linkList {
+    font-size: 1.5rem;
   }
 }

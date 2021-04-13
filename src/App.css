@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 html {
   font-size: 16px;
   background: linear-gradient(to right bottom,#34e89e,#0f3443) no-repeat center center fixed;

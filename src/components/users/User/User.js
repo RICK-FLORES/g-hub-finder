@@ -37,7 +37,9 @@ const User = ({ match }) => {
 
   return (
     <>
-      <div className='bgImage'></div>
+      <div className='bgImageContainer'>
+        <div className='bgImage'></div>
+      </div>
       <div className={styles.goBackBtnContainer}>
         <Link to='/' className={styles.goBackBtn}>Go Back</Link>
       </div>
