@@ -1,5 +1,7 @@
 import React, { useContext } from 'react'
 import AlertContext from '../../../context/alert/alertContext'
+import styles from './Alert.module.css'
+import './Alert.css'
 
 const Alert = () => {
   const alertContext = useContext(AlertContext)
@@ -7,8 +9,9 @@ const Alert = () => {
 
   return (
     alert !== null && (
-      <div className={`alert alert-${alert.type}`} >
-        <i className="fas fa-info-circle"></i> { alert.msg }
+      <div className={styles.alertContainer} >
+        <i className="fas fa-info-circle"></i> 
+        <p className={styles.alertMsg}>{ alert.msg }</p>
       </div>
     )
   )

@@ -1,0 +1,16 @@
+.alertContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 850px;
+}
+
+.alertMsg {
+  background-color: rgb(169, 70, 86);
+  color: #ffffff;
+  font-size: 1.3rem;
+  padding: 1em 1em 1.01em 1em;
+  margin-bottom: 1.5em;
+}
