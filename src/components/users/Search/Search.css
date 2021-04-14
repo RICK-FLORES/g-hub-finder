@@ -1,3 +1,18 @@
 .fa-ban {
   color: rgb(174, 35, 35);
 }
+
+/* .fa-ban:hover {
+  animation-name: rotate;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

@@ -8,9 +8,11 @@ const RepoItem = ({ repo }) => {
     <>
         <ul className={styles.repoList}>
           <li className={styles.repoListItem} key={repo.id}>
-            <h3 className={styles.repoLinkContainer}>
-              <a href={repo.html_url} target='_blank' rel="noreferrer">{repo.name}</a>
-            </h3>
+            <a href={repo.html_url} className={styles.repoLinkContainer} target='_blank' rel="noreferrer">
+              <h3 >
+                {repo.name}
+              </h3>
+            </a>
           </li>
         </ul>
     </>

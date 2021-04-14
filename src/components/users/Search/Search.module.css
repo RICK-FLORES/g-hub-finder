@@ -13,18 +13,32 @@
 }
 
 .txtInput {
-  border: 1px solid black;
+  border: none;
+  font-size: 1rem;
   background-color: rgb(230, 230, 230);
   max-width: 400px;
   width: 100%;
   padding: 1em;
+  transition: all 350ms ease-in-out;
+}
+
+.txtInput:focus {
+  transform: scale(1.02);
 }
 
 .searchBtn {
   border: none;
+  font-size: 1rem;
   background-color: #0f3443;
   color: rgb(255, 255, 255);
   padding: 1em;
+  cursor: pointer;
+  transition: all 350ms ease-in-out;
+}
+
+.searchBtn:hover {
+  background-color: #305766;
+  transform: scale(1.1);
 }
 
 .clearBtn {
@@ -32,4 +46,37 @@
   border: none;
   background-color: rgb(221, 221, 221);
   padding: 1em;
+  cursor: pointer;
+}
+
+.clearBtn:hover {
+  transform: scale(1.1);
+  transition: all 350ms ease-in-out;
+}
+
+.clearBtn:hover i {
+  animation-name: rotate;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+}
+
+@media (min-width: 760px) {
+  .txtInput {
+    font-size: 1.2rem;
+  }
+  .searchBtn {
+    font-size: 1.2rem;
+  }
+  .clearBtn {
+    font-size: 1.2rem;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

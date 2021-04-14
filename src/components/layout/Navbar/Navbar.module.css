@@ -1,7 +1,38 @@
-a {
+.homeLink,
+.aboutLink {
+  padding-bottom: .5em;
+  position: relative;
   color: white;
   text-decoration: none;
   font-weight: bold;
+  transition: color 250ms ease;
+}
+
+.homeLink:hover,
+.aboutLink:hover {
+  color: #1ea16b;
+}
+
+.homeLink::after,
+.aboutLink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in-out;
+}
+
+.homeLink:hover::after,
+.aboutLink:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  color: #dddddd;
+  line-height: 2px;
 }
 
 .navbar {
@@ -11,13 +42,13 @@ a {
   align-items: center;
   padding: 2em 2em;
   margin: 0 auto;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   background-color: #0f3443;
 }
 
 .container {
   width: 100%;
-  max-width: 720px;
+  max-width: 850px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +77,10 @@ a {
 
 @media (min-width: 360px) {
   .logo {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+  }
+  .linkList {
+    font-size: 1.1rem;
   }
 }
 

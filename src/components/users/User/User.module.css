@@ -1,7 +1,7 @@
 .userCard {
   align-self: center;
   width: 90%;
-  max-width: 720px;
+  max-width: 850px;
   margin: 0 2em;
   padding: 2em;
   border-radius: 1rem;
@@ -20,18 +20,24 @@
 }
 
 .goBackBtn {
+  text-decoration: none;
   padding: 1em;
-  color: black;
+  color:#0f3443;
   background-color:rgb(201, 201, 201);
   box-shadow: 2px 3px 5px rgb(72, 72, 72);
   border-radius: .5em;
+  transition: all 250ms ease-in-out;
+}
+
+.goBackBtn:hover {
+  background-color:rgb(237, 237, 237);
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 720px;
+  max-width: 850px;
 }
 
 .img {
@@ -46,7 +52,7 @@
 }
 
 .miscInfo {
-  max-width: 720px;
+  max-width: 850px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
@@ -72,19 +78,24 @@
 }
 
 .viewGitHubBtn {
-  padding: .5em;
+  color: #ffffff;
+  text-decoration: none;
+  padding: .6em;
   border-radius: .5em;
   background-color: #1ea16b;
   box-shadow: 2px 3px 5px rgb(72, 72, 72);
+  transition: all 250ms ease-in-out;
+}
+
+.viewGitHubBtn:hover {
+  background-color: #6ea990;
 }
 
 .goBackBtnContainer {
   align-self: center;
   width: 90%;
-  max-width: 720px;
-  margin: 0 2em;
-  padding: 2em 0;
-  margin-bottom: 1em;
+  max-width: 850px;
+  margin-bottom: 2em;
 }
 
 .miscInfoItems {
