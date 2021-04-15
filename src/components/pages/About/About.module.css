@@ -1,8 +1,35 @@
 .container {
   margin: 0 auto;
+  padding: 0 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imgContainer {
+  margin-top: 1em;
+}
+
+.imgContainer img {
+  width: 100%;
+}
+
+.imgContainer p {
+  color: #e6e6e6;
+  margin-bottom: .5em;
 }
 
 .header,
 .description {
   color: #e6e6e6;
+}
+
+.header {
+  font-size: 1.6rem;
+  margin-bottom: .5em;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: .5em;
 }
